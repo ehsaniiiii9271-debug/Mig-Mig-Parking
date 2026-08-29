@@ -202,9 +202,27 @@ class DriverActivity : AppCompatActivity() {
                 val result = credentialManager.getCredential(this@DriverActivity, request)
                 val credential = result.credential
                 if (credential is GoogleIdTokenCredential) {
-                    onSuccess(credential.id)
+                    // Extract email from the ID token claims
+                    val email = credential.idToken.let { token ->
+                        try {
+                            val parts = token.split(".")
+                            if (parts.size == 3) {
+                                val payload = parts[1]
+                                val decoded = String(android.util.Base64.decode(payload, android.util.Base64.URL_SAFE))
+                                val json = JSONObject(decoded)
+                                json.optString("email", credential.id)
+                            } else {
+                                credential.id
+                            }
+                        } catch (e: Exception) {
+                            credential.id
+                        }
+                    }
+                    onSuccess(email)
+                    Log.d("GoogleSignIn", "Email: $email")
                 } else {
                     Log.e("Auth", "Unknown credential type")
+                    Toast.makeText(this@DriverActivity, "Unknown credential type", Toast.LENGTH_LONG).show()
                 }
             } catch (e: GetCredentialException) {
                 Log.e("Auth", "Google Sign-In Error: ${e.message}")
