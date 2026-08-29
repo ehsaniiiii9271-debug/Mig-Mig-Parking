@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Modern Palette -->
+    <color name="navy_blue">#1A237E</color>
+    <color name="deep_blue">#0D47A1</color>
+    <color name="cyan_accent">#00E5FF</color>
+    <color name="coral_accent">#FF7043</color>
+
+    <color name="primary">#0D47A1</color>
+    <color name="primary_variant">#1A237E</color>
+    <color name="secondary">#00E5FF</color>
+    <color name="secondary_variant">#00B8D4</color>
+
+    <color name="background_gradient_start">#0D47A1</color>
+    <color name="background_gradient_end">#000000</color>
+
+    <color name="surface_card">#FFFFFF</color>
+    <color name="text_on_surface">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <color name="success">#00C853</color>
+    <color name="error">#D50000</color>
+</resources>

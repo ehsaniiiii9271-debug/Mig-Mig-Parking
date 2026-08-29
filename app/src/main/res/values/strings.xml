@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MIG MIG PARKING</string>
+    <string name="btn_driver">IM DRIVER</string>
+    <string name="btn_finder">IM FINDER</string>
+    <string name="title_driver_signup">Driver Sign Up</string>
+    <string name="title_wallet_recharge">Wallet Recharge</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_car_model">Car Model</string>
+    <string name="btn_next">NEXT</string>
+    <string name="btn_confirm">CONFIRM</string>
+    <string name="text_recharge_wallet">Recharge Wallet</string>
+    <string name="hint_amount">Amount (USD)</string>
+    <string name="btn_sign_up">SIGN UP</string>
+    <string name="btn_start">START</string>
+    <string name="btn_request_spot">I WANT A PARKING SPOT</string>
+    <string name="title_finder_signup">Finder Sign Up</string>
+    <string name="hint_bank_card">Bank Card Number</string>
+    <string name="btn_report_spot">I FOUND A PARKING SPOT</string>
+    <string name="btn_close">CLOSE</string>
+
+    <string name="desc_back">Back</string>
+    <string name="desc_gps">GPS</string>
+    <string name="desc_scan">Scan</string>
+    <string name="desc_qr">QR Code</string>
+</resources>
